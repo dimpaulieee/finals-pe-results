@@ -625,6 +625,32 @@
             font-weight: 600;
         }
 
+      .activity-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.activity-img-wrapper:hover .activity-img {
+    transform: scale(1.15);
+}
+
+.activity-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.week-title {
+    color: #5a7fef;
+    font-size: 1.8rem;
+    margin: 30px 0 15px 0;
+    padding-left: 10px;
+    border-left: 4px solid #5a7fef;
+}
         .link-btn {
             display: inline-block;
             padding: 18px 45px;
@@ -741,32 +767,6 @@
             border-radius: 20px;
             margin: 25px 0;
             border: 2px solid rgba(65, 105, 225, 0.2);
-        }
-
-        .activity-images {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-
-        .activity-img-wrapper {
-            position: relative;
-            overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        .activity-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 15px;
-            transition: all 0.4s;
-        }
-
-        .activity-img-wrapper:hover .activity-img {
-            transform: scale(1.15);
         }
 
         .activity-overlay {
@@ -1428,133 +1428,143 @@
             </div>
 
             <!-- Activities Tab -->
-            <div id="activities" class="tab-content">
-                <div class="card scroll-reveal">
-                    <h2 class="section-title">🏋️ Activity Gallery</h2>
-                    <p style="color: #b8c5d6; margin-bottom: 30px;">Visual highlights from my fitness journey</p>
-                    <div class="activity-images">
-    <div class="activity-img-wrapper">
-        <img src="week1.1.png" alt="Week 1" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 1</h4>
+<div id="activities" class="tab-content">
+    <div class="card scroll-reveal">
+        <h2 class="section-title">🏋️ Activity Gallery</h2>
+        <p style="color: #b8c5d6; margin-bottom: 30px;">Visual highlights from my fitness journey</p>
+        
+        <!-- Week 1 -->
+        <h3 class="week-title">Week 1</h3>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week1.1.png" alt="Week 1.1" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 1.1</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                            </div>
 
-                        <div class="activity-images">
-    <div class="activity-img-wrapper">
-                        <img src="week1.2.png" alt="Week 1" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 1</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week1.2.png" alt="Week 1.2" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 1.2</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                </div>
 
-                            <div class="activity-images">
-    <div class="activity-img-wrapper">
-                    <img src="week1.3.png" alt="Week 1" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 1</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week1.3.png" alt="Week 1.3" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 1.3</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                    </div>
 
-            <div class="activity-images">
-    <div class="activity-img-wrapper">        
-        <img src="week2.1.png" alt="Week 2" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 2</h4>
+        <!-- Week 2 -->
+        <h3 class="week-title">Week 2</h3>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week2.1.png" alt="Week 2.1" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 2.1</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                    </div>
 
-                <div class="activity-images">
-    <div class="activity-img-wrapper">
-                            <img src="week2.2.png" alt="Week 2.1" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 2</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week2.2.png" alt="Week 2.2" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 2.2</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                        </div>
 
-                    <div class="activity-images">
-    <div class="activity-img-wrapper">
-                <img src="week2.3.png" alt="Week 2.1" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 2</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week2.3.png" alt="Week 2.3" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 2.3</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                            </div>
 
-                        <div class="activity-images">
-    <div class="activity-img-wrapper">
-        <img src="week3.1.png" alt="Week 3" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 3</h4>
+        <!-- Week 3 -->
+        <h3 class="week-title">Week 3</h3>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week3.1.png" alt="Week 3.1" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 3.1</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                </div>
 
-                            <div class="activity-images">
-    <div class="activity-img-wrapper">
-     <img src="week3.2.png" alt="Week 3" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 3</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week3.2.png" alt="Week 3.2" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 3.2</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                    </div>
 
-                                <div class="activity-images">
-    <div class="activity-img-wrapper">
-     <img src="week3.3.png" alt="Week 3" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 3</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week3.3.png" alt="Week 3.3" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 3.3</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                        </div>
 
-                                    <div class="activity-images">
-    <div class="activity-img-wrapper">
-     <img src="week4.1.png" alt="Week 3" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 3</h4>
+        <!-- Week 4 -->
+        <h3 class="week-title">Week 4</h3>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week4.1.png" alt="Week 4.1" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 4.1</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                            </div>
 
-                                        <div class="activity-images">
-    <div class="activity-img-wrapper">
-     <img src="week4.2.png" alt="Week 3" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 3</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week4.2.png" alt="Week 4.2" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 4.2</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                                </div>
 
-                                            <div class="activity-images">
-    <div class="activity-img-wrapper">
-     <img src="week4.3.png" alt="Week 3" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 3</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week4.3.png" alt="Week 4.3" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 4.3</h4>
+                </div>
+            </div>
         </div>
-    </div>
-                                                    </div>
 
-                                                <div class="activity-images">
-    <div class="activity-img-wrapper">
-        <img src="week4.4.png" alt="Week 4" class="activity-img">
-        <div class="activity-overlay">
-            <h4>Week 4</h4>
+        <div class="activity-images">
+            <div class="activity-img-wrapper">
+                <img src="week4.4.png" alt="Week 4.4" class="activity-img">
+                <div class="activity-overlay">
+                    <h4>Week 4.4</h4>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <h3 style="color: #5a7fef; margin-bottom: 25px;">📝 Related Essays & Documents</h3>
+            <a href="https://drive.google.com/drive/folders/1sGj17tlj17B6b_pdi0nAJa83ke45Vpad?usp=drive_link" target="_blank" class="link-btn">Evidence: Activities</a>
+            <a href="https://drive.google.com/drive/folders/1wDCpRh1DFjpXHJBOr4LkWwwMJZjMCrjB?usp=drive_link" target="_blank" class="link-btn">Evidence: Food Log</a>
         </div>
     </div>
 </div>
-                    <div style="text-align: center; margin-top: 40px;">
-                        <h3 style="color: #5a7fef; margin-bottom: 25px;">📝 Related Essays & Documents</h3>
-                        <a href="https://drive.google.com/drive/folders/1sGj17tlj17B6b_pdi0nAJa83ke45Vpad?usp=drive_link" target="_blank" class="link-btn">Evidence: Activities</a>
-                        <a href="https://drive.google.com/drive/folders/1wDCpRh1DFjpXHJBOr4LkWwwMJZjMCrjB?usp=drive_link" target="_blank" class="link-btn">Evidence: Food Log</a>
-                    </div>
-                </div>
-            </div>
 
             <!-- Progress Tab -->
             <div id="progress" class="tab-content">
