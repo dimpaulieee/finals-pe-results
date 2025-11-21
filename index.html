@@ -270,7 +270,7 @@
         }
 
         .call-to-action {
-            font-size: 32px;
+            font-size: 26px;
             color: #FFD700;
             margin: 40px 0 30px 0;
             font-weight: 700;
@@ -1102,11 +1102,11 @@
     <!-- Quiz Section -->
     <div id="quiz-section">
         <div class="quiz-container">
-            <h2 class="quiz-question" id="quiz-question">💡 What is the primary benefit of regular cardio exercise?</h2>
+            <h2 class="quiz-question" id="quiz-question">💡 Ma'am Kath, papasa po ba ako? </h2>
             <div class="quiz-options">
-                <div class="quiz-option" onclick="answerQuiz(1)">Improves heart health and endurance</div>
-                <div class="quiz-option" onclick="answerQuiz(2)">Increases flexibility only</div>
-                <div class="quiz-option" onclick="answerQuiz(3)">Decreases metabolism</div>
+                <div class="quiz-option" onclick="answerQuiz(1)">Yes na yes</div>
+                <div class="quiz-option" onclick="answerQuiz(2)">Oo naman</div>
+                <div class="quiz-option" onclick="answerQuiz(3)">Yesss!!! Go, go, go!</div>
             </div>
         </div>
     </div>
@@ -1351,7 +1351,7 @@
                             <h4>Nutrition Goals</h4>
                             <p style="color: #b8c5d6; margin-bottom: 10px;">Healthy meal planning and tracking</p>
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 70%;">70% - 59/84 meals</div>
+                                <div class="progress-fill" style="width: 85%;">85% - 71/84 meals</div>
                             </div>
                         </div>
                     </div>
@@ -1532,7 +1532,7 @@
         </div>
 
         <div style="text-align: center; margin-top: 40px;">
-            <h3 style="color: #5a7fef; margin-bottom: 25px;">📝 Related Essays & Documents</h3>
+            <h3 style="color: #5a7fef; margin-bottom: 25px;">📝 Evidences & Videos</h3>
             <a href="https://drive.google.com/drive/folders/1sGj17tlj17B6b_pdi0nAJa83ke45Vpad?usp=drive_link" target="_blank" class="link-btn">Evidence: Activities</a>
             <a href="https://drive.google.com/drive/folders/1wDCpRh1DFjpXHJBOr4LkWwwMJZjMCrjB?usp=drive_link" target="_blank" class="link-btn">Evidence: Food Log</a>
         </div>
@@ -1733,13 +1733,13 @@
                         </div>
                         <div class="result-card">
                             <div class="result-icon">🍽️</div>
-                            <div class="result-value">84</div>
+                            <div class="result-value">71</div>
                             <div class="result-label">Healthy Meals</div>
                             <div class="result-badge">DEDICATION</div>
                         </div>
                         <div class="result-card">
                             <div class="result-icon">💪</div>
-                            <div class="result-value">28</div>
+                            <div class="result-value">16</div>
                             <div class="result-label">Workout Sessions</div>
                             <div class="result-badge">COMMITMENT</div>
                         </div>
@@ -1809,7 +1809,7 @@
                     <div class="achievement">
                         <div class="achievement-icon">✓</div>
                         <div class="achievement-info">
-                            <h4>Logged 84 nutritious meals throughout the challenge</h4>
+                            <h4>Logged 71 nutritious meals throughout the challenge</h4>
                             <p style="color: #b8c5d6;">Consistent healthy eating habits developed</p>
                         </div>
                     </div>
@@ -1908,9 +1908,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="link-btn" style="margin-top: 20px; width: 100%; display: block; text-align: center;">
-                                ➡️ CALCULATE YOUR BMI
-                            </button>
+                        
+                            <a href="https://dimpaulieee.github.io/fitnessapp/signup.html" class="link-btn" style="margin-top: 20px; width: 100%; display: block; text-align: center;">
+                                ➡️ CALCULATE BMI NOW
+                            </a>
+                
                         </div>
                     </div>
                 </div>
@@ -2126,8 +2128,14 @@
             if (quizAnswered) return;
             quizAnswered = true;
             
-            const options = document.querySelectorAll('.quiz-option');
-            options[answer - 1].style.background = answer === 1 ? 'rgba(144, 238, 144, 0.5)' : 'rgba(255, 107, 107, 0.5)';
+           const options = document.querySelectorAll('.quiz-option');
+const answers = [1, 2, 3];
+
+answers.forEach(answer => {
+    options[answer - 1].style.background = answers.includes(answer) 
+        ? 'rgba(144, 238, 144, 0.5)' 
+        : 'rgba(255, 107, 107, 0.5)';
+});
             
             setTimeout(() => {
                 document.getElementById('quiz-section').classList.remove('active');
@@ -2201,14 +2209,14 @@
                     labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
                     datasets: [{
                         label: 'Cardio Sessions',
-                        data: [5, 6, 7, 7],
+                        data: [3, 3, 4, 5],
                         backgroundColor: 'rgba(65, 105, 225, 0.8)',
                         borderColor: '#4169E1',
                         borderWidth: 2,
                         borderRadius: 8
                     }, {
                         label: 'Strength Sessions',
-                        data: [2, 2, 3, 2],
+                        data: [2, 2, 3, 3],
                         backgroundColor: 'rgba(255, 215, 0, 0.8)',
                         borderColor: '#FFD700',
                         borderWidth: 2,
